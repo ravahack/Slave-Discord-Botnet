@@ -1,6 +1,7 @@
 // Only faggots keep their code Priv8
 // I hope you scrip kiddies are drewling
 // Anonghost is still the king of Cyber
+// Changing the code doesn't make your the coder
 // Coded by that ahack guy
 
 // Prerequisite downloads from npm package manager
