@@ -3,6 +3,7 @@
                                        (Brought to you by your moms still fat and thats not every nice)
                                         
   <img src="https://www.thesun.co.uk/wp-content/uploads/2016/04/eastenders_mobile_top.jpg?strip=all&w=750&h=352&crop=1"/>
+  <img src="https://cdn.discordapp.com/attachments/298991530025156608/299553629461938176/unknown.png"/>
   
   Bobby killed Lucy Thug Life Listen Rollsafe innit 
   
